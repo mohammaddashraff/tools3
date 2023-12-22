@@ -16,10 +16,11 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+ENV REACT_APP_API_PORT=https://back-end-final-muhammadashraf-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com
+
 # Expose the port the app runs on
 # EXPOSE 3000
 
 # Command to run the application
 CMD ["npm", "start"]
 
-ENV REACT_APP_API_PORT=https://back-end-final-muhammadashraf-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com
