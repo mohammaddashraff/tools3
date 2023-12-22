@@ -59,7 +59,6 @@ func signUp(name string, password string, userType string, email string) error {
 }
 
 func signIn(email string, password string) (error, string, int) {
-	connectionStr := "user=postgres password=asdyfe2rd dbname=webclinic host=db-container port=5432 sslmode=disable"
 	conn, err := sql.Open("postgres", connectionStr)
 	if errors.Is(err, sql.ErrNoRows) {
 		return err, "", 0
