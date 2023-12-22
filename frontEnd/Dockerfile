@@ -22,4 +22,4 @@ COPY . .
 # Command to run the application
 CMD ["npm", "start"]
 
-ENV REACT_APP_API_PORT=https://back-end-muhammadashraf-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com:8080
+ENV REACT_APP_API_PORT=https://back-end-muhammadashraf-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com
