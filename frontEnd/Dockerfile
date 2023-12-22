@@ -20,5 +20,3 @@ chown -R 1008510000:0 /.npm
 
 # Command to run the application
 CMD ["npm", "start"]
-
-#CMD ["sudo", "chown", "-R", "1008510000:0", "/.npm"]
