@@ -9,4 +9,4 @@ ENV POSTGRES_DB=webclinic
 # Copy initialization script to set up the initial database schema and data
 COPY init.sql /docker-entrypoint-initdb.d/
 
-RUN chmod 777 /var/lib/postgresql/data
+sudo RUN chmod 777 /var/lib/postgresql/data
