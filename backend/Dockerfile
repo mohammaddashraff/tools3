@@ -5,7 +5,7 @@ FROM golang:latest
 WORKDIR /app
 
 # Copy go.mod and go.sum files to download dependencies
-COPY ./backend .
+COPY go.mod go.sum ./
 
 # Download dependencies
 RUN go mod download

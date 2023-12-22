@@ -7,9 +7,7 @@ ENV POSTGRES_PASSWORD=asdyfe2rd
 ENV POSTGRES_DB=webclinic
 
 # Copy initialization script to set up the initial database schema and data
-# COPY init.sql /docker-entrypoint-initdb.d/
-
-# RUN chmod 777 /var/lib/postgresql/data
+COPY init.sql /docker-entrypoint-initdb.d/
 
 USER root
 RUN chown -R 1008510000:0 /var/lib/postgresql/data
