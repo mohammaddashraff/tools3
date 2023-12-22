@@ -1,0 +1,31 @@
+/* SchedulePage.css */
+
+.new-slot {
+    background-color: #e2f0ff;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .list-group-item {
+    margin-bottom: 10px;
+  }
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+  

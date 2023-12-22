@@ -1,0 +1,33 @@
+/* SignIn.css */
+.signin-container {
+    background-color: #f8f9fa;
+    border-radius: 15px; /* Increase the border-radius for a rounder frame */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increase the box-shadow for a more prominent frame */
+    padding: 30px; /* Increase the padding for a larger frame */
+    width: 350px; /* Increase the width for a wider frame */
+  }
+  
+  .signin-container h2 {
+    color: #007bff;
+  }
+  
+  .signin-container label {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .signin-container .form-control {
+    margin-bottom: 15px; /* Increase the margin-bottom for more space between inputs */
+  }
+  
+  .signin-container .btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .signin-container .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
