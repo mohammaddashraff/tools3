@@ -13,3 +13,4 @@ COPY init.sql /docker-entrypoint-initdb.d/
 
 RUN chown -R 1008510000:0 /var/lib/postgresql/data
 RUN chown -R 1008510000:0 /var/run/postgresql
+USER 1008510000
