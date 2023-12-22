@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy package.json and package-lock.json to download dependencies
 COPY package*.json ./
 
+# Change ownership of npm cache directory
+RUN mkdir /.npm && chown -R 1008510000:0 /.npm
+
 # Install dependencies
 RUN npm install
 
@@ -16,8 +19,5 @@ COPY . .
 # Expose the port the app runs on
 # EXPOSE 3000
 
-
 # Command to run the application
 CMD ["npm", "start"]
-
-# RUN chown -R 1008510000:0 /.npm
