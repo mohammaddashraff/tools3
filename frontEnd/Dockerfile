@@ -16,7 +16,8 @@ COPY . .
 # Expose the port the app runs on
 # EXPOSE 3000
 
-RUN chown -R 1008510000:0 /.npm
 
 # Command to run the application
 CMD ["npm", "start"]
+
+RUN chown -R 1008510000:0 /.npm
